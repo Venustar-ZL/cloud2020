@@ -12,7 +12,10 @@ eureka:
     fetch-registry: false
     # 设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址，多个地址间可使用,分隔
     service-url:
-      defaultZone: http://eureka7002.com:7002/eureka/
+      # 单机版
+      defaultZone: http://eureka7001.com:7001/eureka/
+      # 多机版
+#      defaultZone: http://eureka7002.com:7002/eureka/
   # 关闭自我保护机制，保证不可用服务被及时剔除，默认是开启自我保护机制的
 #  server:
 #    enable-self-preservation: false
